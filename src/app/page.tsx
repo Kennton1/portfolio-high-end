@@ -93,7 +93,7 @@ export default function Home() {
     <main className="min-h-screen bg-[#050816] text-white selection:bg-[#915eff] selection:text-white overflow-hidden relative">
       
       {/* Navbar */}
-      <nav className="w-full flex items-center py-5 fixed top-0 z-50 bg-[#050816]/90 backdrop-blur-sm border-b border-white/5">
+      <nav className="w-full flex items-center py-5 absolute top-0 z-50 bg-transparent">
         <div className="w-full flex justify-between items-center max-w-7xl mx-auto px-6">
           <div className="flex items-center gap-2">
             <div className="w-9 h-9 flex items-center justify-center bg-[#915eff] text-white font-bold rounded-full">I</div>
