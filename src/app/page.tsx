@@ -148,7 +148,7 @@ export default function Home() {
     setSecretClicks(prev => {
       const newClicks = prev + 1;
       if (newClicks >= 5) {
-        router.push('/dashboard');
+        router.push('/login');
         return 0;
       }
       // Reset clicks after 2 seconds of inactivity

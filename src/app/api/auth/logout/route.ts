@@ -6,5 +6,5 @@ export async function POST() {
   const cookieStore = await cookies();
   cookieStore.delete('admin_token');
 
-  return NextResponse.json({ success: true });
+  return NextResponse.json({ success: true, redirectTo: '/login' });
 }
