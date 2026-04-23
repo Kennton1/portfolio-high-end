@@ -1,14 +1,21 @@
 "use client";
 
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import { formatDistanceToNow } from 'date-fns';
 import { es } from 'date-fns/locale';
 import { Inbox, Mail as MailIcon, Eye } from 'lucide-react';
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default function DashboardContent({ messages, views }: { messages: any[], views: number }) {
-  const containerVariants = {
+type Message = {
+  id: string;
+  name: string;
+  email: string;
+  message: string;
+  createdAt: Date | string;
+};
+
+export default function DashboardContent({ messages, views }: { messages: Message[], views: number }) {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -16,9 +23,9 @@ export default function DashboardContent({ messages, views }: { messages: any[],
     }
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
   };
 
   return (
