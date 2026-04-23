@@ -9,13 +9,16 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@prisma/client": "^6.0.0",
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.5.0",
     "@types/canvas-confetti": "^1.9.0",
     "@types/three": "^0.183.1",
     "canvas-confetti": "^1.9.4",
     "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
     "framer-motion": "^12.38.0",
+    "jose": "^6.2.2",
     "lucide-react": "^1.0.1",
     "mini-svg-data-uri": "^1.4.4",
     "next": "16.2.1",
@@ -27,12 +30,14 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
+    "@types/node": "^20.19.39",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.1",
+    "prisma": "^6.0.0",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   }
 }
