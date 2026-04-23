@@ -6,6 +6,7 @@ import { formatDistanceToNow } from 'date-fns';
 import { es } from 'date-fns/locale';
 import { Inbox, Mail as MailIcon, Eye } from 'lucide-react';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function DashboardContent({ messages, views }: { messages: any[], views: number }) {
   const containerVariants = {
     hidden: { opacity: 0 },
